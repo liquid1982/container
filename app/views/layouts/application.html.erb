@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Container</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul>
+  <li><%= link_to 'Container',  main_app.root_url %></li>
+  <li><%= link_to 'Candidates', candidates_engine.root_url %></li>
+  <li><%= link_to 'Jobs',       jobs_engine.root_url %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>
